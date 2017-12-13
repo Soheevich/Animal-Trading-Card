@@ -1,0 +1,51 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list span {
+  font-weight: bold;
+}
+
+.image {
+  width: 300px;
+  margin: 0 10px;
+}
+
+.header {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.border {
+  border-style: solid;
+  border-width: thin;
+  border-color: grey;
+}
+
+.card {
+  border-radius: 10px;
+  width: 320px;
+  background-color: #ddd;
+  transition: all 200ms ease-out;
+  margin: 20px auto;
+}
+
+.card:hover {
+  box-shadow: 0 0 8px #55f;
+}
+
+.information {
+  background-color: white;
+  margin: 10px 10px;
+  border-width: thin;
+  padding: 0px 10px;
+}
+
+#interesting-fact {
+  font-style: italic;
+}
