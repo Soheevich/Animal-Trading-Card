@@ -1,33 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 html {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
+  margin: 0;
+  padding: 0 0 0 0;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 10px 0px;
-  background-image: linear-gradient(#80bb70, #aaeeaa);
+  min-height: 100%;
+  background: center center/cover;
+  background-color: #80bb70;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/grad-bg.png");
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card {
+  position: relative;
+  top: 15px;
   display: block;
   margin: auto auto;
   padding: 0 0 10px 0;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 300px;
-  background-color: #ccffcc;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 60, 0, 0.19), 0 6px 6px rgba(0, 60, 0, 0.23);
   transition: all 200ms ease-out;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
 
 .card:hover {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 60, 0, 0.30), 0 15px 12px rgba(0, 60, 0, 0.22);
 }
 
 ul {
@@ -41,23 +51,29 @@ ul {
 
 .header {
   position: absolute;
-  margin: 10px auto;
+  margin: auto auto;
+  padding: 5px 0;
   text-align: center;
   width: 300px;
   text-transform: uppercase;
   color: white;
+  background-color: rgba(0, 130, 0, 0.40);
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
 }
 
 .image {
   width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0% 90%);
 }
 
 .information {
   background-color: white;
-  margin: 10px 10px 0 10px;
-  border-width: thin;
+  margin: 10px 10px 5px 10px;
   padding: 10px 10px;
   font-size: 14px;
+  border: thin solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .interesting-fact {
